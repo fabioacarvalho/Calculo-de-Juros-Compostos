@@ -2,12 +2,12 @@
   <v-app>
     <v-app-bar
       app
-      color="primary"
+      color="#263238"
       dark
     >
       <div class="d-flex align-center">
         
-        <span>Calculo de Juros Compostos</span>
+        <span>Calculadora de Juros Compostos</span>
       </div>
 
       <v-spacer></v-spacer>
@@ -18,7 +18,11 @@
     <v-main>
       <Body/>
     </v-main>
+    <v-footer>
+      Developed by Fábio Carvalho
+    </v-footer>
   </v-app>
+  
 </template>
 
 <script>
@@ -36,3 +40,7 @@ export default {
   }),
 };
 </script>
+
+<style >
+
+</style>
