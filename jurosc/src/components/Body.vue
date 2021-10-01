@@ -1,18 +1,18 @@
 <template>
   <v-container fluid>
     <v-container v-if="calc == false" fluid>
-        <div class="ma-16">
-          <v-row >
-            <v-col cols="6"  md="6">
+        <div class="ma-16 xs">
+          <v-row  >
+            <v-col cols="12"  md="6" sm="6">
               <v-text-field  v-model="valorInicial" type="number" label="Valor Incial"></v-text-field>
             </v-col>
-            <v-col cols="6" md="6">
+            <v-col cols="12" md="6" sm="6">
               <v-text-field v-model="aporte" type="number" label="Valor do Aporte Mensal" :rules="rules" hide-details="auto" ></v-text-field>
             </v-col>
-            <v-col cols="6" md="6">
+            <v-col cols="12" md="6">
               <v-text-field v-model="juros" type="number" label="Taxa de Juros a.a."></v-text-field>
             </v-col>
-            <v-col cols="6" md="6">
+            <v-col cols="12" md="6">
               <v-text-field v-model="tempo" type="number" label="Tempo Investido (mês)"></v-text-field>
             </v-col>
           </v-row>
@@ -43,7 +43,7 @@
         </v-card-actions>
       </v-card>
       <br>
-      <v-card class="mx-auto pa-5" max-width="450">
+      <v-card class="mx-auto xs pa-5" max-width="450">
         <h2 >Fórmula utilizada para calcular:</h2>
         <v-img class="ma-10 " id="img" width="250" src="../assets/juros-compostos.png"></v-img>
         <p>
